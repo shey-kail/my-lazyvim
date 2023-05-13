@@ -42,4 +42,32 @@ return {
     "rcarriga/nvim-notify",
     enabled = false,
   },
+
+  -- disable nvim-notify (better notify)
+  {
+    "rcarriga/nvim-notify",
+    enabled = false,
+  },
+
+  -- disable mini.bufremove (bufremove)
+  {
+    "echasnovski/mini.bufremove",
+    enabled = false,
+  },
+
+  -- disable nvim-treesitter
+  {
+    "nvim-treesitter/nvim-treesitter",
+    enabled = false,
+  },
+  {
+    "nvim-treesitter/nvim-treesitter-textobjects",
+    enabled = false,
+  },
+
+  -- disable mini.indentscope
+  {
+    "echasnovski/mini.indentscope",
+    enabled = false,
+  },
 }

@@ -91,3 +91,26 @@ map("n", "<A-0>", "<Cmd>BufferLast<CR>", bufopts)
 map("n", "<A-p>", "<Cmd>BufferPin<CR>", bufopts)
 -- Close buffer
 map("n", "<A-c>", "<Cmd>BufferClose<CR>", bufopts)
+
+-- Iron.nvim keymap
+-- "Iron visual_send"
+noremap("v", "<localleader><space>", function()
+  require("iron.core").visual_send()
+end, bufopts)
+-- "Iron send line"
+noremap("n", "<localleader><space>", function()
+  require("iron.core").send_line()
+end, bufopts)
+-- "quit Iron"
+noremap("n", "<localleader><cr>", function()
+  require("iron.core").close_repl()
+end, bufopts)
+
+-- "Iron send Enter"
+noremap("n", "<localleader><cr>", function()
+  require("iron.core").send(nil, string.char(13))
+end, bufopts)
+-- "Iron interrupt"
+noremap("n", "<localleader>s<space>", function()
+  require("iron.core").send(nil, string.char(03))
+end, bufopts)
