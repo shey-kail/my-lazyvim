@@ -23,7 +23,7 @@ return {
             },
             r = { command = "radian" },
           },
-          repl_open_cmd = "rightbelow 40vsplit | set nonu | set signcolumn=no ",
+          repl_open_cmd = "rightbelow 40vsplit | set nonu | set norelativenumber | set signcolumn=no ",
         },
         -- Iron doesn't set keymaps by default anymore.
         -- You can set them here or manually add keymaps to the functions in iron.core
