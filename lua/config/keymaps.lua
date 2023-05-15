@@ -54,22 +54,26 @@ noremap("n", "<right>", ":vertical resize+5<CR>", {})
 -- vertical to horizontal ( | -> -- )
 noremap("n", "<leader>z", "<C-w>t<C-w>K", {})
 noremap("n", "<leader>v", "<C-w>t<C-w>H", {})
-
 --use Ctrl+jk for repaid warching
 noremap("n", "<C-j>", "5j", {})
 noremap("n", "<C-k>", "5k", {})
-
 --use alt+o to add a new line down
 noremap("i", "<A-o>", "<Esc>o", {})
 --use alt+O to add a new line up
 noremap("i", "<A-O>", "<Esc>O", {})
 --use <Esc> to exit terminal-mode
 noremap("t", "<Esc>", "<C-\\><C-n>", {})
--- <leader>ra to start RnvimrToggle
-noremap("n", "<leader>ra", "<cmd>Ranger<cr>", {})
---noremap('n', '<leader>jo', '<cmd>Joshuto<cr>', {})
 
--- barbar keymap
+
+-- ===
+-- ===fm-nvim keymap
+-- ===
+-- use <space> + ra for opening ranger
+noremap("n", "<leader>ra", "<cmd>Ranger<cr>", {})
+
+-- ===
+-- ===barbar keymap
+-- ===
 local bufopts = { noremap = true, silent = true }
 map("n", "<A-,>", "<Cmd>BufferPrevious<CR>", bufopts)
 map("n", "<A-.>", "<Cmd>BufferNext<CR>", bufopts)
@@ -92,7 +96,9 @@ map("n", "<A-p>", "<Cmd>BufferPin<CR>", bufopts)
 -- Close buffer
 map("n", "<A-c>", "<Cmd>BufferClose<CR>", bufopts)
 
--- Iron.nvim keymap
+-- ===
+-- === Iron.nvim keymap
+-- ===
 -- "Iron visual_send"
 noremap("v", "<localleader><space>", function()
   require("iron.core").visual_send()
@@ -105,7 +111,6 @@ end, bufopts)
 noremap("n", "<localleader><cr>", function()
   require("iron.core").close_repl()
 end, bufopts)
-
 -- "Iron send Enter"
 noremap("n", "<localleader><cr>", function()
   require("iron.core").send(nil, string.char(13))
@@ -114,3 +119,9 @@ end, bufopts)
 noremap("n", "<localleader>s<space>", function()
   require("iron.core").send(nil, string.char(03))
 end, bufopts)
+
+
+-- ===
+-- === lsp keymap
+-- ===
+noremap('n', '<space>rn', vim.lsp.buf.rename, bufopts)

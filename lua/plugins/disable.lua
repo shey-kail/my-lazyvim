@@ -55,16 +55,6 @@ return {
     enabled = false,
   },
 
-  -- disable nvim-treesitter
-  {
-    "nvim-treesitter/nvim-treesitter",
-    enabled = false,
-  },
-  {
-    "nvim-treesitter/nvim-treesitter-textobjects",
-    enabled = false,
-  },
-
   -- disable mini.indentscope
   {
     "echasnovski/mini.indentscope",
