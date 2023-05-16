@@ -20,6 +20,8 @@ vscode.nvim (to replace default theme)
 
 fm-nvim (use ranger, gitui, etc in neovim)
 
+iron.nvim (repl support)
+
 ## plugins disabled
 
 alpha-nvim (I don't need and like dashbord)
@@ -43,5 +45,18 @@ nvim-spectre (I don't need find and replace plugins)
 
 ## lsp
 
-pyright r_language_server lua_ls
+* pyright
 
+* r_language_server(disable syntax checking, because the default syntax checking is too tedious)
+
+* lua_ls
+
+## feature
+
+1. lazy load[](./screenshot/lazy_load.png)
+
+2. lsp feature(like completion, rename, syntax checking, etc)
+
+3. treesitter indent promt[](./screenshot/treesitter_indent_promt.png)
+
+4. fastfold(supported by lsp and nvim-ufo) [](./screenshot/)
