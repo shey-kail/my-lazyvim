@@ -125,3 +125,18 @@ end, bufopts)
 -- === lsp keymap
 -- ===
 noremap('n', '<space>rn', vim.lsp.buf.rename, bufopts)
+
+-- ===
+-- === <space>m to transfrom mouse enable/disable
+-- ===
+noremap('n', '<space>m', function()
+  if vim.o.mouse=="" then
+    vim.o.mouse = "a"
+    print("Mouse enabled")
+  else
+    vim.o.mouse=""
+    print("Mouse disabled")
+  end
+end, bufopts)
+
+
