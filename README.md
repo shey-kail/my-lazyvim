@@ -1,10 +1,12 @@
 # 💤 my-lazyvim
 
-this project is my neovim configs that based on [LazyVim](https://github.com/LazyVim/LazyVim).
+this project is my neovim configs that based on [LazyVim](https://github.com/LazyVim/LazyVim)
 
 ## model enabled
 
 lazyvim.plugins.extras.coding.copilot (for copilot)
+
+lazyvim.plugins.extras.dap.core (for debug)
 
 ## plugins added
 
@@ -42,7 +44,6 @@ nvim-notify (Too fancy)
 
 nvim-spectre (I don't need find and replace plugins)
 
-
 ## lsp
 
 * pyright
@@ -50,6 +51,10 @@ nvim-spectre (I don't need find and replace plugins)
 * r_language_server(disable syntax checking, because the default syntax checking is too tedious)
 
 * lua_ls
+
+## dap
+
+* debugpy
 
 ## feature
 
@@ -60,3 +65,4 @@ nvim-spectre (I don't need find and replace plugins)
 3. treesitter indent promt[](./screenshot/treesitter_indent_promt.png)
 
 4. fastfold(supported by lsp and nvim-ufo) [](./screenshot/)
+
