@@ -48,13 +48,21 @@ nvim-spectre (I don't need find and replace plugins)
 
 * pyright
 
-* r_language_server(disable syntax checking, because the default syntax checking is too tedious)
+* r_language_server
 
 * lua_ls
+
+* kotlin-language-server
+
+* rust-analyzer
 
 ## dap
 
 * debugpy
+
+* kotlin-debug-adapter
+
+* codelldb(for rust)
 
 ## feature
 
