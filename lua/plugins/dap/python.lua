@@ -1,6 +1,5 @@
 -- dap config
-return{
-  { import = "lazyvim.plugins.extras.dap.core" },
+return {
 
   {
     "jay-babu/mason-nvim-dap.nvim",
@@ -8,7 +7,7 @@ return{
       ensure_installed = { "python" },
       handlers = {
         python = function()
-          local dap = require('dap');
+          local dap = require("dap")
           dap.adapters.python = {
             type = "executable",
             command = vim.fn.stdpath("data") .. "/mason/packages/debugpy/venv/bin/python",
@@ -34,42 +33,22 @@ return{
                 end
 
                 -- check if virtualenv python exists
-                if vim.fn.executable(cwd .. '/env/bin/python') == 1 then
-                  return cwd .. '/env/bin/python'
-                elseif vim.fn.executable(cwd .. '/.env/bin/python') == 1 then
-                  return cwd .. '/.env/bin/python'
+                if vim.fn.executable(cwd .. "/env/bin/python") == 1 then
+                  return cwd .. "/env/bin/python"
+                elseif vim.fn.executable(cwd .. "/.env/bin/python") == 1 then
+                  return cwd .. "/.env/bin/python"
                 -- check if conda env python exists
                 elseif vim.fn.executable(conda_py) == 1 then
                   return conda_py
                 -- otherwise use system python
                 else
-                  return '/usr/bin/python3'
+                  return "/usr/bin/python3"
                 end
-              end
-            }
+              end,
+            },
           }
         end,
-      }
-    }
-  },
-
-  {
-    "rcarriga/nvim-dap-ui",
-    opts = {
-      mappings = {
-        -- enable LeftMouse
-        expand = { "<CR>", "<2-LeftMouse>" },
-        open = "o",
-        remove = "d",
-        edit = "e",
-        repl = "r",
       },
-    }
+    },
   },
-
 }
-
-
-
-
-
