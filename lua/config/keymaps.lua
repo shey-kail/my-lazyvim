@@ -120,12 +120,6 @@ noremap("n", "<localleader>s<space>", function()
   require("iron.core").send(nil, string.char(03))
 end, bufopts)
 
-
--- ===
--- === lsp keymap
--- ===
-noremap('n', '<space>rn', vim.lsp.buf.rename, bufopts)
-
 -- ===
 -- === <space>m to transfrom mouse enable/disable
 -- ===
