@@ -3,6 +3,9 @@ return {
     "kevinhwang91/nvim-ufo",
     dependencies = { "kevinhwang91/promise-async" },
     event = "BufRead",
+    opts = function(bufnr, filetype, buftype)
+      return { "treesitter", "indent" }
+    end,
     config = function()
       -- Fold options
       vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
@@ -14,4 +17,3 @@ return {
     end,
   },
 }
-

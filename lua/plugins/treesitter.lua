@@ -15,6 +15,7 @@ return {
         "vim",
         "markdown",
         "markdown-inline",
+        "kotlin"
       },
   },
 }
