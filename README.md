@@ -52,8 +52,6 @@ nvim-spectre (I don't need find and replace plugins)
 
 * lua_ls
 
-* kotlin-language-server
-
 * rust-analyzer
 
 ## dap
@@ -72,5 +70,5 @@ nvim-spectre (I don't need find and replace plugins)
 
 3. treesitter indent promt[](./screenshot/treesitter_indent_promt.png)
 
-4. fastfold(supported by lsp and nvim-ufo) [](./screenshot/)
+4. fastfold(supported by treesitter and nvim-ufo) [](./screenshot/)
 
