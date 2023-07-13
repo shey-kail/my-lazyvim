@@ -1,4 +1,17 @@
 return {
+
+  -- lsp configuration
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      -- @type lspconfig.options
+      servers = {
+        bashls = {},
+      },
+    },
+  },
+
+  -- repl
   {
     "hkupty/iron.nvim",
     config = function()

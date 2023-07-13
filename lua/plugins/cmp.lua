@@ -1,10 +1,6 @@
 return {
-  -- only when sh, py, lua, r files are opened, copilot.lua will be loaded
+  -- enable copilot
   { import = "lazyvim.plugins.extras.coding.copilot" },
-  {
-    "copilot.lua",
-    ft = { "sh", "py", "lua", "r", "kt", "rs" },
-  },
 
   --Use <tab> for completion and snippets (supertab).
   {

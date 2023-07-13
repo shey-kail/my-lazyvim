@@ -10,8 +10,6 @@ return {
       },
     },
   },
-
-  -- cmdline tools and lsp servers
   {
     "williamboman/mason.nvim",
     opts = {
@@ -19,5 +17,21 @@ return {
         "r-languageserver",
       },
     },
+  },
+
+  --repl
+  {
+    "hkupty/iron.nvim",
+    config = function()
+      require("iron.core").setup({
+        config = {
+          repl_definition = {
+            r = {
+              command = "radian",
+            },
+          },
+        },
+      })
+    end,
   },
 }

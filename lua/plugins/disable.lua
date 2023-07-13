@@ -55,6 +55,12 @@ return {
     enabled = false,
   },
 
+  -- disable mini.ai (extend and create `a`/`i` textobjects)
+  {
+    "echasnovski/mini.ai",
+    enabled = false,
+  },
+
   -- disable mini.indentscope
   {
     "echasnovski/mini.indentscope",
