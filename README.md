@@ -58,8 +58,6 @@ nvim-spectre (I don't need find and replace plugins)
 
 * debugpy
 
-* kotlin-debug-adapter
-
 * codelldb(for rust)
 
 ## feature

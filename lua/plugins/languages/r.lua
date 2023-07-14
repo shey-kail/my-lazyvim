@@ -23,14 +23,23 @@ return {
   {
     "hkupty/iron.nvim",
     config = function()
-      require("iron.core").setup({
+      local iron = require("iron.core")
+      iron.setup({
         config = {
+          -- Whether a repl should be discarded or not
+          scratch_repl = true,
+          repl_open_cmd = "rightbelow 40vsplit | set nonu | set norelativenumber | set signcolumn=no ",
+
           repl_definition = {
             r = {
               command = "radian",
             },
           },
         },
+        highlight = {
+          italic = true,
+        },
+        ignore_blank_lines = false,
       })
     end,
   },
