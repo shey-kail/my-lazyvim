@@ -6,10 +6,19 @@ return {
     opts = {
       -- @type lspconfig.options
       servers = {
-        r_language_server = {},
+        r_language_server = {
+          settings = {
+            r = {
+              lsp = {
+                use_stdio = true,
+              },
+            },
+          },
+        },
       },
     },
   },
+
   {
     "williamboman/mason.nvim",
     opts = {

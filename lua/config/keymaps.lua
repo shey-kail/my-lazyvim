@@ -69,6 +69,7 @@ noremap("t", "<Esc>", "<C-\\><C-n>", {})
 -- ===
 -- use <space> + ra for opening ranger
 noremap("n", "<leader>ra", "<cmd>Ranger<cr>", {})
+noremap("n", "<leader>lf", "<cmd>Lf<cr>", {})
 
 -- ===
 -- ===barbar keymap

@@ -7,7 +7,8 @@ return {
       edit_cmd = "edit",
       cmds = {
         gitui_cmd = "gitui",
-        ranger_cmd = "ranger",
+        lf_cmd = "lf",
+        --ranger_cmd = "ranger",
         --joshuto_cmd = "joshuto",
       },
       -- Mappings used with the plugin
