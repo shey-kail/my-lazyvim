@@ -9,6 +9,13 @@ return {
   {
     "williamboman/mason.nvim",
     cmd = "Mason",
+    opts = {
+      github = {
+        -- The template URL to use when downloading assets from github.
+        -- use kgithub as github mirror site.
+        download_url_template = "https://kgithub.com/%s/releases/download/%s/%s",
+      },
+    },
     keys = { { "<leader>cm", "<cmd>Mason<cr>", desc = "Mason" } },
   },
 
