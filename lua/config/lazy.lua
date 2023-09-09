@@ -31,6 +31,10 @@ require("lazy").setup({
   },
   install = { colorscheme = { "tokyonight", "habamax" } },
   checker = { enabled = false }, -- automatically check for plugin updates
+  git = {
+    -- set kgithub as github mirror for lazy.vim
+    url_format = "https://kgithub.com/%s.git",
+  },
   performance = {
     rtp = {
       -- disable some rtp plugins
