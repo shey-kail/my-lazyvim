@@ -119,6 +119,17 @@ end, bufopts)
 noremap("n", "<localleader>s<space>", function()
   require("iron.core").send(nil, string.char(03))
 end, bufopts)
+-- "Iron preview variable"
+noremap("n", "<localleader>pv", function()
+  -- 判断文件类型
+  -- 如果是R文件，则执行R的dataframe预览
+  if vim.bo.filetype == "r" then
+    require("iron.core").send(nil, "View(" .. vim.fn.expand("<cword>") .. ")")
+  else
+    -- 如果是其他的, 则执行预览变量
+    require("iron.core").send(nil, vim.fn.expand("<cword>"))
+  end
+end, bufopts)
 
 -- ===
 -- === <space>m to transfrom mouse enable/disable
