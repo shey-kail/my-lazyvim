@@ -31,27 +31,9 @@ return {
     enabled = false,
   },
 
-  -- disable bufferline (bufferline) (I use barbar.nvim instead)
-  {
-    "akinsho/nvim-bufferline.lua",
-    enabled = false,
-  },
-
-  -- disable nvim-notify (better notify) (I use barbar.nvim instead)
-  {
-    "rcarriga/nvim-notify",
-    enabled = false,
-  },
-
   -- disable nvim-notify (better notify)
   {
     "rcarriga/nvim-notify",
-    enabled = false,
-  },
-
-  -- disable mini.bufremove (bufremove)
-  {
-    "echasnovski/mini.bufremove",
     enabled = false,
   },
 
