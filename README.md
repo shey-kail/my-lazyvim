@@ -10,8 +10,6 @@ lazyvim.plugins.extras.dap.core (for debug)
 
 ## plugins added
 
-barbar.nvim (to replace bufferline.nvim)
-
 fcitx.nvim
 
 vim-visual-multi (multi-cursor like vscode)
@@ -28,8 +26,6 @@ iron.nvim (repl support)
 
 alpha-nvim (I don't need and like dashbord)
 
-mini.bufremove (barbar.nvim has this feature)
-
 mini.indentscope (replaced by nvim-treesitter and indent-blankline.nvim)
 
 neo-tree.nvim (replaced by fm-nvim)
@@ -37,8 +33,6 @@ neo-tree.nvim (replaced by fm-nvim)
 catppuccin (replaced by vscode.nvim) (In disabled list, it is called "nvim")
 
 tokyonight.nvim (replaced by vscode.nvim)
-
-nvim-bufferline.lua (replaced by barbar.nvim)
 
 nvim-notify (Too fancy)
 
