@@ -38,10 +38,10 @@ return {
                   return cwd .. "/env/bin/python"
                 elseif vim.fn.executable(cwd .. "/.env/bin/python") == 1 then
                   return cwd .. "/.env/bin/python"
-                -- check if conda env python exists
+                  -- check if conda env python exists
                 elseif vim.fn.executable(conda_py) == 1 then
                   return conda_py
-                -- otherwise use system python
+                  -- otherwise use system python
                 else
                   return "/usr/bin/python3"
                 end
@@ -75,6 +75,14 @@ return {
               end,
             },
           },
+        },
+        keymaps = {
+          visual_send = "<leader><space>",
+          send_line = "<leader><space>",
+          cr = "<space>s<cr>",
+          interrupt = "<space>s<space>",
+          exit = "<space>sq",
+          clear = "<space>cl",
         },
         highlight = {
           italic = true,

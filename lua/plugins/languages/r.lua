@@ -45,6 +45,14 @@ return {
             },
           },
         },
+        keymaps = {
+          visual_send = "<leader><space>",
+          send_line = "<leader><space>",
+          cr = "<space>s<cr>",
+          interrupt = "<space>s<space>",
+          exit = "<space>sq",
+          clear = "<space>cl",
+        },
         highlight = {
           italic = true,
         },
@@ -52,4 +60,13 @@ return {
       })
     end,
   },
+
+  -- preview R variable
+  {
+    "shey-kail/preview-R-nvim",
+    ft = "r",
+    dependencies = {
+      "hkupty/iron.nvim",
+    },
+  }
 }
