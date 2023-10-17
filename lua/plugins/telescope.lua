@@ -10,12 +10,12 @@ return {
       end,
     },
     keys = {
-      { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
-      { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Live Grep" },
-      { "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help Tags" },
+      { "<leader>ff",      "<cmd>Telescope find_files<cr>", desc = "Find Files" },
+      { "<leader>fg",      "<cmd>Telescope live_grep<cr>",  desc = "Live Grep" },
+      { "<leader>fh",      "<cmd>Telescope help_tags<cr>",  desc = "Help Tags" },
 
       -- disable Telescope buffers
-      { "<leader>fb", false },
+      { "<leader>fb",      false },
       -- disable Telescope defaule find files
       { "<leader><space>", false },
     },
