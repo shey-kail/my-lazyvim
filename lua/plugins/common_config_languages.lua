@@ -38,7 +38,7 @@ return {
   -- repl config
   {
     "hkupty/iron.nvim",
-    ft = { "sh", "py", "lua", "r" },
+    ft = { "sh", "py", "r" },
   },
 
   { import = "plugins.languages" },
