@@ -68,5 +68,13 @@ return {
     dependencies = {
       "hkupty/iron.nvim",
     },
+    keys = {
+      {
+        "<leader>pr",
+        mode = { "n", "v" },
+        function() require('preview-R-nvim').preview_newbuffer(10) end,
+        desc = "preview variable in new buffer"
+      },
+    },
   }
 }
