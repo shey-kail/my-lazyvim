@@ -1,6 +1,7 @@
 # 💤 my-lazyvim
 
-this project is my neovim configs that based on [LazyVim](https://github.com/LazyVim/LazyVim)
+this project is my neovim configs that based on [LazyVim](https://github.com/LazyVim/LazyVim), and I have made some changes to it.
+People who use neovim for Rust, Python or R development is recommended to use this project.
 
 ## model enabled
 
@@ -22,6 +23,10 @@ fm-nvim (use ranger, gitui, etc in neovim)
 
 iron.nvim (repl support)
 
+CopilotChat.nvim (chat with copilot)
+
+preview-R-nvim (preivew table variable in R)
+
 ## plugins disabled
 
 alpha-nvim (I don't need and like dashbord)
@@ -37,22 +42,6 @@ tokyonight.nvim (replaced by vscode.nvim)
 nvim-notify (Too fancy)
 
 nvim-spectre (I don't need find and replace plugins)
-
-## lsp
-
-* pyright
-
-* r_language_server
-
-* lua_ls
-
-* rust-analyzer
-
-## dap
-
-* debugpy
-
-* codelldb(for rust)
 
 ## feature
 
