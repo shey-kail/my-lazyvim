@@ -28,7 +28,7 @@ end
 -- === Remap space as leader key
 -- ===
 vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+-- vim.g.maplocalleader = " "
 
 -- ===
 -- === windows management
@@ -58,7 +58,7 @@ noremap("i", "<A-O>", "<Esc>O", {})
 noremap("t", "<Esc>", "<C-\\><C-n>", {})
 
 -- "Iron preview variable"
-noremap("n", "<localleader>pv", function()
+noremap("n", "<leader>pv", function()
   -- 判断文件类型
   -- 如果是R文件，则执行R的dataframe预览
   if vim.bo.filetype == "r" then
