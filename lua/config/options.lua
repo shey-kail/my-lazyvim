@@ -11,3 +11,8 @@ vim.o.fileencodings = "ucs-bom,utf-8,cp936" -- encoding when reading file
 
 -- set wrap
 vim.o.wrap = true
+
+-- LSP Server to use for Python.
+-- Set to "basedpyright" to use basedpyright instead of pyright
+vim.g.lazyvim_python_lsp = "basedpyright"
+
