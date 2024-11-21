@@ -21,7 +21,6 @@ return {
       },
     },
     keys = {
-      { "<leader>ra", "<cmd>Ranger<cr>", desc = "ranger" },
       { "<leader>lf", "<cmd>Lf<cr>",     desc = "lf" },
     },
   },

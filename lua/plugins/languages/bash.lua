@@ -17,7 +17,7 @@ return {
     -- Your repl definitions come here
     repl_definition = {
       sh = {
-        command = { "zsh" }
+        command = { "bash" }
       }
     },
     -- How the repl window will be displayed

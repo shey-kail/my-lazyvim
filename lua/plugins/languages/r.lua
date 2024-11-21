@@ -19,14 +19,14 @@ return {
     },
   },
 
-  {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "r-languageserver",
-      },
+{
+  "williamboman/mason.nvim",
+  opts = {
+    ensure_installed = {
+      "r-languageserver",
     },
   },
+},
 
   --repl
   {

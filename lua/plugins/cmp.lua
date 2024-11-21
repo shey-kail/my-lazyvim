@@ -1,7 +1,4 @@
 return {
-  -- enable copilot
-  { import = "lazyvim.plugins.extras.coding.copilot" },
-
   --Use <tab> for completion and snippets (supertab).
   {
     "L3MON4D3/LuaSnip",
