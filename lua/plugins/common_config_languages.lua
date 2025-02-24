@@ -19,8 +19,6 @@ return {
     keys = { { "<leader>cm", "<cmd>Mason<cr>", desc = "Mason" } },
   },
 
-  -- dap config
-  { import = "lazyvim.plugins.extras.dap.core" },
   {
     "rcarriga/nvim-dap-ui",
     opts = {
