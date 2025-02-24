@@ -1,6 +1,4 @@
 return {
-  { import = "lazyvim.plugins.extras.lang.python" },
-
   -- dap config
   {
     "jay-babu/mason-nvim-dap.nvim",

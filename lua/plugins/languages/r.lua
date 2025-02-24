@@ -19,14 +19,14 @@ return {
     },
   },
 
-{
-  "williamboman/mason.nvim",
-  opts = {
-    ensure_installed = {
-      "r-languageserver",
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "r-languageserver",
+      },
     },
   },
-},
 
   --repl
   {
@@ -41,7 +41,7 @@ return {
 
           repl_definition = {
             r = {
-              command = "radian",
+              command = "R",
             },
           },
         },
@@ -72,9 +72,11 @@ return {
       {
         "<leader>pr",
         mode = { "n", "v" },
-        function() require('preview-R-nvim').preview_newbuffer(10) end,
-        desc = "preview variable in new buffer"
+        function()
+          require("preview-R-nvim").preview_newbuffer(10)
+        end,
+        desc = "preview variable in new buffer",
       },
     },
-  }
+  },
 }

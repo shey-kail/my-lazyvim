@@ -17,12 +17,12 @@ return {
     -- Your repl definitions come here
     repl_definition = {
       sh = {
-        command = { "bash" }
-      }
+        command = { "bash" },
+      },
     },
     -- How the repl window will be displayed
     -- See below for more information
-    repl_open_cmd = require('iron.view').bottom(40),
+    repl_open_cmd = require("iron.view").bottom(40),
   },
 
   -- repl

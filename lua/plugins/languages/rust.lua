@@ -1,6 +1,4 @@
 return {
-  { import = "lazyvim.plugins.extras.lang.rust" },
-
   -- dap
   {
     "jay-babu/mason-nvim-dap.nvim",
