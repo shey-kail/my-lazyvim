@@ -6,7 +6,7 @@ return {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "vscode",
-    }
+    },
   },
 
   {
@@ -18,26 +18,25 @@ return {
       { "<A-4>", mode = { "n", "i" }, "<Cmd>BufferLineGoToBuffer 4<CR>", desc = "go to buffer 4" },
       { "<A-5>", mode = { "n", "i" }, "<Cmd>BufferLineGoToBuffer 5<CR>", desc = "go to buffer 5" },
       { "<A-6>", mode = { "n", "i" }, "<Cmd>BufferLineGoToBuffer 6<CR>", desc = "go to buffer 6" },
-      { "<A-,>", mode = { "n", "i" }, "<Cmd>BufferLineCyclePrev<CR>",    desc = "go to previous buffer" },
-      { "<A-.>", mode = { "n", "i" }, "<Cmd>BufferLineCycleNext<CR>",    desc = "go to next buffer" },
+      { "<A-,>", mode = { "n", "i" }, "<Cmd>BufferLineCyclePrev<CR>", desc = "go to previous buffer" },
+      { "<A-.>", mode = { "n", "i" }, "<Cmd>BufferLineCycleNext<CR>", desc = "go to next buffer" },
       {
         "<A-<>",
         mode = { "n", "i" },
         "<Cmd>BufferLineMovePrev<CR>",
-        desc =
-        "move the current to previous position"
+        desc = "move the current to previous position",
       },
-      { "<A->>",      mode = { "n", "i" }, "<Cmd>BufferLineMoveNext<CR>",  desc = "move the current to next position" },
-      { "<A-p>",      mode = { "n", "i" }, "<Cmd>BufferLineTogglePin<CR>", desc = "pin the current buffer" },
+      { "<A->>", mode = { "n", "i" }, "<Cmd>BufferLineMoveNext<CR>", desc = "move the current to next position" },
+      { "<A-p>", mode = { "n", "i" }, "<Cmd>BufferLineTogglePin<CR>", desc = "pin the current buffer" },
       { "<leader>bp", false },
       { "<leader>bP", false },
       { "<leader>bo", false },
       { "<leader>br", false },
       { "<leader>bl", false },
-      { "<S-h>",      false },
-      { "<S-l>",      false },
-      { "[b",         false },
-      { "]b",         false },
+      { "<S-h>", false },
+      { "<S-l>", false },
+      { "[b", false },
+      { "]b", false },
     },
   },
 
@@ -69,9 +68,8 @@ return {
       },
       {
         "<leader>bD",
-        false
-      }
+        false,
+      },
     },
-  }
-
+  },
 }
