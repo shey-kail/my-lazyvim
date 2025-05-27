@@ -1,27 +1,44 @@
 return {
-
-  -- open ranger in neovim
   {
-    "is0n/fm-nvim",
-    opts = {
-      edit_cmd = "edit",
-      cmds = {
-        gitui_cmd = "gitui",
-        lf_cmd = "lf",
-        --ranger_cmd = "ranger",
-        --joshuto_cmd = "joshuto",
-      },
-      -- Mappings used with the plugin
-      mappings = {
-        vert_split = "<C-v>",
-        horz_split = "<C-h>",
-        tabedit = "<C-t>",
-        edit = "<C-e>",
-        ESC = "<ESC>",
-      },
+    "mikavilpas/yazi.nvim",
+    event = "VeryLazy",
+    dependencies = {
+      -- check the installation instructions at
+      -- https://github.com/folke/snacks.nvim
+      "folke/snacks.nvim",
     },
     keys = {
-      { "<leader>lf", "<cmd>Lf<cr>",     desc = "lf" },
+      -- 👇 in this section, choose your own keymappings!
+      {
+        "<leader>yy",
+        mode = { "n", "v" },
+        "<cmd>Yazi<cr>",
+        desc = "Open yazi at the current file",
+      },
+      {
+        -- Open in the current working directory
+        "<leader>cw",
+        "<cmd>Yazi cwd<cr>",
+        desc = "Open the file manager in nvim's working directory",
+      },
+      {
+        "<c-up>",
+        "<cmd>Yazi toggle<cr>",
+        desc = "Resume the last yazi session",
+      },
     },
+    opts = {
+      -- if you want to open yazi instead of netrw, see below for more info
+      open_for_directories = false,
+      keymaps = {
+        show_help = "<f1>",
+      },
+    },
+    -- 👇 if you use `open_for_directories=true`, this is recommended
+    init = function()
+      -- More details: https://github.com/mikavilpas/yazi.nvim/issues/802
+      -- vim.g.loaded_netrw = 1
+      vim.g.loaded_netrwPlugin = 1
+    end,
   },
 }
