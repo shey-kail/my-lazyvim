@@ -39,5 +39,13 @@ return {
     ft = { "sh", "py", "r" },
   },
 
+  -- disable <leader><space> for "folke/snacks.nvim"
+  {
+    "folke/snacks.nvim",
+    keys = {
+      { "<leader><space>", false, desc = "Find Files (Root Dir)" },
+    },
+  },
+
   { import = "plugins.languages" },
 }
